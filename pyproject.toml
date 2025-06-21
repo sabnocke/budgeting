@@ -4,6 +4,11 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.13"
 dependencies = [
+    "attrs>=25.3.0",
+    "dotenv>=0.9.9",
+    "pip>=25.1.1",
     "python-dateutil>=2.9.0.post0",
     "requests>=2.32.3",
+    "spacy>=3.8.7",
+    "thefuzz>=0.22.1",
 ]

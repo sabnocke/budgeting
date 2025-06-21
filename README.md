@@ -1,15 +1,24 @@
 # TODO
 
-- [ ] Parse FIO API output
+- [X] Parse FIO API output
   - Current format is: _JSON_
-- [ ] Use `settings.toml` translation for translating Columns to useful name
-- [ ] Figure out which database to use for storing parsed values
-  - Candidates:
-    - [Neo4j](https://neo4j.com)
-    - [Cassandra](https://cassandra.apache.org/_/index.html)
-    - [Azure Cosmos](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.DocumentDb%2FdatabaseAccounts)
-    - [AWS Dynamo](https://eu-central-1.console.aws.amazon.com/dynamodbv2/home?region=eu-central-1#service)
-    - [GC Firestore](https://firebase.google.com/docs/firestore/quickstart)
+- [ ] ~~Use `settings.toml` translation for translating Columns to useful name~~
+- [x] Figure out which database to use for storing parsed values
+- [x] Make database schema
+- [ ] _attrs_ seem to be overkill
+- [ ] For now _fuzzy matching_ and _known_aliases.csv_ is enough
+  - Consider adding NER for figuring out unknown names
+  - It's also good practice for NLP
+- [ ] Create connection from python (will python be used as backend for the full application?)
+---
 - [ ] Figure out categories for classification
 - [ ] Classify (and maybe sentiment analysis?)
+---
 - [ ] Maybe some nice GUI
+  - [ ] GUI for mobile?
+- [Svelte](https://svelte.dev)
+- [NativeScript](https://nativescript.org)
+- [Flutter](https://flutter.dev)
+- [.NET Maui](https://dotnet.microsoft.com/en-us/apps/maui)
+- [Avalonia](https://avaloniaui.net)
+- [Kotlin Multiplatform](https://kotlinlang.org/docs/multiplatform.html)
