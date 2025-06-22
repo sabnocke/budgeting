@@ -18,7 +18,7 @@
   - [ ] GUI for mobile?
 - [Svelte](https://svelte.dev)
 - [NativeScript](https://nativescript.org)
-- [Flutter](https://flutter.dev)
-- [.NET Maui](https://dotnet.microsoft.com/en-us/apps/maui)
-- [Avalonia](https://avaloniaui.net)
+- **[Flutter](https://flutter.dev)**
+- **[.NET Maui](https://dotnet.microsoft.com/en-us/apps/maui)**
+- **[Avalonia](https://avaloniaui.net)**
 - [Kotlin Multiplatform](https://kotlinlang.org/docs/multiplatform.html)
