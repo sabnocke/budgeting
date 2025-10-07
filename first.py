@@ -1,16 +1,20 @@
+import os
+from dotenv import load_dotenv
 from datetime import datetime
-from dateutil.relativedelta import relativedelta
 from pprint import pprint
 import requests
 
 
-d = datetime.now()
-new = d - relativedelta(days=30)
+def get_all():
+    start = datetime.now().strftime('%Y-%m-%d')
+    api = os.environ.get("API_KEY")
+    link = rf"https://fioapi.fio.cz/v1/rest/periods/{api}/{start}/2010-01-01/transactions.json"
 
-first = new.strftime("%Y-%m-%d")
-second = d.strftime("%Y-%m-%d")
-t = rf"https://fioapi.fio.cz/v1/rest/periods/{API}/{first}/{second}/transactions.html"
+    r = requests.get(link)
 
-response = requests.get(t)
+    pprint(r)
 
-pprint(response.text)
+
+if __name__ == "__main__":
+    load_dotenv()
+    get_all()
